@@ -1,5 +1,6 @@
 from fractions import Fraction
 import calculator.expected_value as expected_value
+import exporter.graph
 
 limitedWeaponPerAll = 0.043 / 100
 TotalNumberOfLimitedWeapon = 12
@@ -14,4 +15,4 @@ results = (
     in range(0, 300)
 )
 
-print(list(results))
+exporter.graph.make_graph(results)
