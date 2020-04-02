@@ -4,4 +4,5 @@ services:
     build: ./docker/app
     volumes:
       - ./app:/var/www/html
+      - ./deliverable:/tmp/deliverable
     tty: true
